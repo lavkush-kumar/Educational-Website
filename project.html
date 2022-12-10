@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edutech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+ body{
+    height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+    cursor:pointer; 
+}
+
+/*________________________________landing page and navigation section__________________________________*/
+header{
+    background:linear-gradient(to left,rgba(255, 0, 30, 0.486) 30%,rgba(36, 10, 233, 0.741)),url("landing-page.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:120vh;
+    position:relative;
+}
+ header nav{
+    width:100%;
+    height:10%;
+    padding:10px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.978)  ;
+    z-index:1; 
+}
+ nav .logo{
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    letter-spacing:2px; 
+}
+nav .logo span{
+    color:aqua;
+}
+ nav .menu a{
+    margin:0px 7.5px;
+    font-weight: 700;
+    text-decoration-line:none;
+    color:white; 
+}
+
+ nav .menu a:hover{
+    color:crimson;
+    transition:all .4s linear;
+
+} 
+nav .login-btn p{
+    text-decoration-line:none;
+    color:#c3af00;
+    font-weight:700;
+    font-size:25px;
+    transition:all .5s;
+}
+ section.landing-page{
+    position:absolute;
+    top:40%;
+    right:19.5%;
+} 
+.landing-page .overview{
+    text-align:left;
+}
+.landing-page .overview p{
+    font-weight:500;
+    color:midnightblue;
+    transition:linear .4s
+}
+ header:hover .descri{
+    color:white;
+    text-shadow:1px 1px 2px black,0 0 25px blue,0 0 5px darkblue; 
+}
+section.landing-page p.tag-line{
+    font-size:23px;
+    font-weight:700;
+    color:black;
+}
+section.landing-page p.tag-line strong{
+    color:aqua;
+    
+}
+.landing-page .btn button{
+    padding:7.5px 15px;
+    margin:4px 4px 0px 4px;
+    font-weight:700;
+    border-radius:6px; 
+}
+ .btn .btn1{
+    background-color:black;
+    color:white; 
+}
+.btn .btn2{
+    background-color:white;
+    color:black;
+}
+header section.social-media{
+    position:absolute;
+    top:40%;
+    left:5%;
+}
+ section.social-media a{
+    display:block;
+    color:white;
+    text-align: center;
+    font-size:25px;
+    width:45px;
+    height:auto;
+    border-radius:22.5px;
+    margin-bottom:10px;
+    padding:8px 0px;
+    cursor:pointer;
+    background-color:black; 
+}
+
+ section.social-media a:hover {
+    transform:rotate(45deg); 
+     color:darkred; 
+     transition:.3s linear; 
+ }
+
+
+section.social-media a:nth-child(2):hover{
+    transform:rotate(-45deg);
+    color:dodgerblue;
+    transition:.3s linear;
+}
+/*________________________________Team section___________________________________________________  */
+
+
+section.founders{
+    padding:20px 70px;
+}
+ .founders h3{
+    text-align:center;
+    text-align: center;
+    margin:10px 0px 20px 0px;
+    font-size: 20px;
+    font-weight:600;
+    color:black;
+    letter-spacing:2px;
+    text-transform: uppercase; 
+} 
+.founders h3::first-letter{
+    color:rgb(244, 0, 138);
+    font-size:30px
+}
+.founders-cards{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:40px 10px; 
+}
+.card{
+    width:300px;
+    height:auto;
+    background-color:whitesmoke;
+    text-align:center;
+    position:relative;
+    box-shadow:0px 0px 5px 0px gray;
+    transition:.5s;
+}
+.card img{
+    width:150px;
+    height:150px;
+    border-radius:75px;
+    padding:15px;
+}
+.card h4{
+    color:black;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+ .card .founder-overlay{
+    position:absolute;
+    left:0;
+    bottom:0px;
+    width:100%;
+    height:0%;
+    align-items: center;
+    padding:40px 0px;
+    opacity:0;
+    text-align: center;
+    box-shadow:0px 0px 5px 0px gray;  
+}
+.card:hover{
+    transform:scale(1.2,1.2);
+}
+.card:hover .founder-overlay{
+    opacity:1;
+    height:100%;
+    background-color:rgb(177, 76, 132);
+    transition:all linear .3s;
+}
+.founder-overlay h4{
+    color:white;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.founder-overlay a{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 45px;
+    height:45px;
+    border-radius:22.5px;
+    padding:8px 11px;
+    margin:5px;
+    cursor: pointer;
+    background-color: black;
+}
+.founder-overlay a i:hover{
+    transform:rotate(45deg);
+    color:dodgerblue;
+    transition:.5s;
+}
+/* ______________________________________footer section____________________________________________ */
+ footer{
+    background-color: black;
+    text-align: right;
+    color:white;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    padding:20px;
+    margin:20px 0px;
+    margin:30px 0 0 0; 
+}
+.footer p{
+    margin:2px 4px;
+}
+p.copy-right{
+    float:right;
+}
+
+
+/*_________________________________________ about-section ______________________________*/
+section.about-us{
+    border:2px solid red
+    padding: 30PX;
+}
+.about-container img{
+    height:200px;
+    width:250px;
+}
+ .about-container{
+    display:flex;
+    text-align: center;
+    justify-content: space-evenly; 
+} 
+.about-us-list{
+    border:2px solid green;
+    background-color:rgba(255, 192, 203, 0.841);
+    width:18.75rem;
+    height: auto;
+    padding: 10px; 
+}
+.about-us h3{
+    text-align:center;
+    text-align: center;
+    margin:10px 0px 20px 0px;
+    font-size: 20px;
+    font-weight:600;
+    color:black;
+    letter-spacing:2px;
+    text-transform: uppercase;
+}
+.about-us h3::first-letter{
+    color:rgb(231, 5, 133);
+    font-size:30px; 
+}
+.about-us-list h4{
+    font-size:1.1rem;
+    color:rgb(251, 135, 3);
+    margin:5px;
+}
+.about-us-list p{
+    margin:5px;
+    color:darkcyan;
+    text-align:center;
+}
+
+    </style>
+</head>
+<body>
+    <!--__________LANDING PAGE AND NAVBAR__________-->
+    <header id="home">
+       <nav>
+            <div class="logo">
+                <p>Edu<span>Tech</span></p>
+            </div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#name">ABOUT</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">TEAM</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACTS</a>
+            </div>
+            <div class="LOGIN">
+                <a href="index5.html"target="_blank">LOGIN</a>
+            </div>
+        </nav>
+        <section class="landing-page">
+            <div class="overview">
+            <p class="tag-line">Start learning with Edu <strong>Tech</strong></p>
+            <p class="descri">Get unlimited access to<br>structured courses & doubt clearing sessions with us.....</p>
+            <div class="btn">
+                <button class="btn1">JOIN NOW</button>
+                <button class="btn2">OFFER FOR YOU ONLY</button>
+            </div>
+            </div>
+        </section>
+        <section class="social-media">
+            <a href="https://www.instagram.com/lavkushsharma4774"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/lavkush-kumar-a40b90252"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </section>
+    </header>
+    
+    <section class="about-us" id="name">
+        <h3>what we provide</h3>
+        <div class="about-container">
+            <div class="about-us-list">
+                <h4>Full coverage of School syllabus</h4>
+                <img src="syllabus.jpg" alt="">
+                <p>Full syllabus coverage for school and collages in 480 session(30 per subject)</p>
+            </div>
+            <div class="about-us-list">
+                <h4>Study material</h4>
+                <img src="study material.jpg" alt="">
+                <p>Get study material in PDF format and Recordings of detailed syllabus coverage for each subject.</p>
+            </div>
+            <div class="about-us-list">
+                <h4>Assignment and class notes</h4>
+                <img src="assignment.jpg" alt="">
+                <p> Improve your Board exam percentage by solving chapter wise tests and assignment. Get chapter + Topic wise assignments,
+                    Summary notes and Class recordings </p>
+            </div>
+            <div class="about-us-list">
+                <h4>Doubt solving</h4>
+                <img src="doubt.jpg" alt="">
+                <p>Ask unlimited doubts inside the class and post class. Ask doubts also on EduTech's doubt solving android app.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--_______________founders section________________-->
+    <section id="founders-sec" class="founders">
+        <h3>meet our Partners</h3>
+        <div class="founders-cards">
+            <!-- Vivek Panday -->
+            <div class="card">
+                <div class="img">
+                    <img src="vivek.jpg" alt="">
+                    <h4>Vivek Panday</h4>
+                </div>
+                <div class="founder-overlay">
+                    <h4>Vivek Panday</h4>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- lavkush -->
+            <div class="card">
+                <div class="img">
+                    <img src="lav.jpg" alt="">
+                    <h4>Lavkush Sharma</h4>
+                </div>
+                <div class="founder-overlay">
+                    <h4>Lavkush Sharma</h4>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- love -->
+            <div class="card">
+                <div class="img">
+                    <img src="love.jpg" alt="">
+                    <h4>Love Upadhaya</h4>
+                </div>
+                <div class="founder-overlay">
+                    <h4>Love Upadhaya</h4                                     >
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--________________footer section________________-->
+    <footer>
+        <div class="footer-content">
+            <p>&#169;EduTech</p>
+            <p>+91 9693252419</p>
+        </div>
+    </footer>
+</body>
+</html>
